@@ -1,4 +1,4 @@
-var appName = 'icon4app!'
+var appName = 'GetAppIcon!'
 console.log('AppName is :'+appName+', By Fnoz')
 
 // var readline = require('readline');
