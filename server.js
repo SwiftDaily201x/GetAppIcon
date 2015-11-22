@@ -66,10 +66,10 @@ http.createServer(function (request, response) {
         response.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />')
         response.write('<link rel="shortcut icon" type="image/jpeg" href="../getAppIconLogo.png">');
         response.write('<body>')
-        response.write('<a href=""><img style="width:100%;height:width;" src="http://7xl2dx.com1.z0.glb.clouddn.com/getAppIcon_appListBanner.png"/></a>')
+        response.write('<style>body{TEXT-ALIGN: center;}.bannerImg{ MARGIN-RIGHT: auto;MARGIN-LEFT: auto;height:100px;width:300px;vertical-align:middle;}.bannerImg img{width:100%;height:100%;}.bannerTitle{ MARGIN-RIGHT: auto;MARGIN-LEFT: auto;height:20px;font-family:"STHeitiSC-Light","Monaco","Trebuchet MS","Courier New";font-size: 0.95rem;color:#888;width:600px;vertical-align:middle;line-height:20px;}</style><a href=""><div class="bannerImg"><img style="width:100%;height:width;" src="http://7xl2dx.com1.z0.glb.clouddn.com/getAppIcon_getAppIcon_appListBanner.png"></div></a><div class="bannerTitle"><p>Click on the image to download HD icon.</p></div>')
         var t = JSON.parse(resData.join(""))
         for (var i = 0; i < t.results.length; i++) {
-          response.write("<a href='"+t.results[i].artworkUrl512+"' title='"+t.results[i].trackName+"'' rel='nofollow' download=''><img src='"+t.results[i].artworkUrl60+"' width='80' height='80' vspace = '15' hspace = '15'/></a>")
+          response.write("<a href='"+t.results[i].artworkUrl512+"' title='"+t.results[i].trackName+"'' rel='nofollow' download=''><img src='"+t.results[i].artworkUrl60+"' width='80' height='80' vspace = '10' hspace = '10'/></a>")
         }
         response.write("</body>")
         response.end()
