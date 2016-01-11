@@ -120,7 +120,7 @@ a:hover {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: white;
-  background-image: linear-gradient(rgba(131, 113, 113, 0.0), rgba(131, 113, 113, 0.5)), url(../images/thumbnail/designer-items-shop.jpg_1600x1200.jpg);
+  background-image: linear-gradient(rgba(131, 113, 113, 0.0), rgba(131, 113, 113, 0.5)), url(../image/home_bgImage.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: scroll
