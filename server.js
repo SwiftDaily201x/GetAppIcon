@@ -65,12 +65,14 @@ http.createServer(function (request, response) {
         response.writeHead(200, {'Content-Type': 'text/html'})
         response.write('<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />')
         response.write('<link rel="shortcut icon" type="image/jpeg" href="../getAppIconLogo.png">');
-        response.write('<body>')
-        response.write('<style>body{TEXT-ALIGN: center;}.bannerImg{ MARGIN-RIGHT: auto;MARGIN-LEFT: auto;height:100px;width:300px;vertical-align:middle;}.bannerImg img{width:100%;height:100%;}.bannerTitle{ MARGIN-RIGHT: auto;MARGIN-LEFT: auto;height:20px;font-family:"STHeitiSC-Light","Monaco","Trebuchet MS","Courier New";font-size: 0.95rem;color:#888;width:600px;vertical-align:middle;line-height:20px;}</style><a href=""><div class="bannerImg"><img style="width:100%;height:width;" src="http://7xl2dx.com1.z0.glb.clouddn.com/getAppIcon_getAppIcon_appListBanner.png"></div></a><div class="bannerTitle"><p>Click on the image to download HD icon.</p></div>')
+        response.write('<body bgcolor="#2a3141"><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?6dc574baf57d60ada5dc334d04f5d5e8";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>')
+        response.write('<style>body{TEXT-ALIGN: center;}.bannerImg{ MARGIN-RIGHT: auto;MARGIN-LEFT: auto;height:100px;width:300px;vertical-align:middle;}.bannerImg img{width:100%;height:100%;}.bannerTitle{ MARGIN-RIGHT: auto;MARGIN-LEFT: auto;height:20px;font-family:"STHeitiSC-Light","Monaco","Trebuchet MS","Courier New";font-size: 0.95rem;color:#888;width:600px;vertical-align:middle;line-height:20px;}</style><a href=""><div class="bannerImg"><img style="width:100%;height:width;" src="http://fnoz-blog.bj.bcebos.com/20160717_00.png"></div></a>')
         var t = JSON.parse(resData.join(""))
+        response.write('<div style="position:relative;margin-top:0px;margin-left:120px;margin-right:120px">')
         for (var i = 0; i < t.results.length; i++) {
           response.write("<a href='"+t.results[i].artworkUrl512+"' title='"+t.results[i].trackName+"'' rel='nofollow' download=''><img src='"+t.results[i].artworkUrl100+"' width='80' height='80' vspace = '10' hspace = '10'/></a>")
         }
+        response.write('</div">')
         response.write("</body>")
         response.end()
     	})
